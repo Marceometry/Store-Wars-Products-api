@@ -5,8 +5,29 @@ const Schema = new mongoose.Schema({
         type: String,
         required: true
     },
+    
+    description: {
+        type: String,
+        required: true
+    },
+
     price: {
         type: Number,
+        required: true
+    },
+
+    images: {
+        type: [String],
+        required: true
+    },
+
+    tags: {
+        type: [String],
+        required: true
+    },
+
+    categories: {
+        type: [String],
         required: true
     }
 })
