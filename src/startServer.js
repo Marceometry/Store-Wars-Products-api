@@ -10,5 +10,8 @@ export default function startServer({ typeDefs, resolvers }) {
     })
 
     const server = new ApolloServer({ typeDefs, resolvers })
-    server.listen().then(({ url }) => console.log(`✨ Server started at ${url}`))
+    
+    server
+        .listen(process.env.PORT || 1166)
+        .then(({ url }) => console.log(`✨ Server started at ${url}`))
 }
