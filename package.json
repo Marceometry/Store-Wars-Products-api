@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "npx nodemon --exec babel-node src/index.js"
+    "dev": "npx nodemon --exec babel-node src/index.js -e js,gql"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
@@ -15,6 +15,8 @@
   },
   "dependencies": {
     "apollo-server": "^3.1.2",
-    "graphql": "^15.5.1"
+    "dotenv": "^10.0.0",
+    "graphql": "^15.5.1",
+    "mongoose": "^5.13.7"
   }
 }
